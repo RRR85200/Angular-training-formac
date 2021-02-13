@@ -1,0 +1,20 @@
+<p>reactive-form works!</p>
+<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+  <p>
+    <label> Fist Name</label>
+    <input type="text" formControlName="title" name="title"/>
+  </p>
+
+  <p>
+    <label> Last Name</label>
+    <input type="text" formControlName="body"  name="body"/>
+  </p>
+
+  <p>
+    <label> Email</label>
+    <input type="number" formControlName="userId"  name="userId"/>
+  </p>
+
+  <button type="submit">Submit</button>
+
+</form>

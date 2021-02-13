@@ -1,0 +1,19 @@
+<p>Template works!</p>
+<form #myForm="ngForm" (ngSubmit)="onSubmit()">
+  <p>
+    <label> Fist Name</label>
+    <input type="text" [(ngModel)]="user.firstName" name="firstName"/>
+  </p>
+
+  <p>
+    <label> Last Name</label>
+    <input type="text" [(ngModel)]="user.lastName" name="lastName"/>
+  </p>
+
+  <p>
+    <label> Email</label>
+    <input type="email" [(ngModel)]="user.email" name="email"/>
+  </p>
+  <button type="submit">Submit</button>
+
+</form>

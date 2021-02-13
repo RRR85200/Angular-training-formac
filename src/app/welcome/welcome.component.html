@@ -1,0 +1,13 @@
+
+<div  class="welcome">
+  <p class="title">welcome Everyone ! I am {{name}} and {{age}} lives in {{location}}</p>
+  <p>Service Status : {{serivceStatus}}</p>
+  <input (keyup)="handleInputChange($event)" />
+  <button (click)="changeName(' FOrmac INC')" >Click Me </button>
+</div>
+<!--<p *ngIf="hide"> I am back !!</p>-->
+<!--  <p *ngFor="let itemName of items">-->
+<!--{{itemName}}-->
+<!--</p>-->
+<!--<app-template-form></app-template-form>-->
+<div *ngFor="let post of posts">{{post.title}}</div>
